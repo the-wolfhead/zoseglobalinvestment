@@ -1,0 +1,175 @@
+:root {
+  --primary: #0B3C5D;
+  --accent: #1CA7A6;
+  --light: #F5F7FA;
+  --dark: #1F2937;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.bg-light {
+  background: var(--light);
+}
+
+/* ================= HEADER ================= */
+.header {
+  background: var(--white);
+  padding: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background: linear-gradient(rgba(11,60,93,0.8), rgba(11,60,93,0.8)),
+              url('https://images.unsplash.com/photo-1584515933487-779824d29309') center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary {
+  background: var(--accent);
+  color: var(--white);
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* ================= SERVICES ================= */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* ================= APP SECTION ================= */
+.app-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ================= WHY ================= */
+.why-list {
+  margin-top: 30px;
+  list-style: none;
+}
+
+.why-list li {
+  margin-bottom: 15px;
+}
+
+/* ================= CTA ================= */
+.cta {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #0a2e47;
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
