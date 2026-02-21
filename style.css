@@ -254,3 +254,35 @@ body {
     text-align: center;
   }
 }
+
+/* Smooth Global Transitions */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Button Hover Effects */
+.btn-primary:hover {
+  background: #169c9b;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-3px);
+}
+
+/* Card Hover Animation */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* Nav Link Hover */
+.nav-links a:hover {
+  color: var(--accent);
+}
