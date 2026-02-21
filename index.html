@@ -7,6 +7,8 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -44,12 +46,12 @@
   <!-- ================= HERO ================= -->
   <section class="hero">
     <div class="container hero-content">
-      <h2>Accessible Healthcare Across Nigeria</h2>
-      <p>
+      <h2 data-aos="fade-up">Accessible Healthcare Across Nigeria</h2>
+      <p data-aos="fade-up" data-aos-delay="200">
         Consult certified doctors online, access quality medical equipment,
         and experience healthcare innovation built for Nigerians.
       </p>
-      <div class="hero-buttons">
+      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
         <a href="#" class="btn-primary">Book Online Consultation</a>
         <a href="#" class="btn-secondary">Download App</a>
       </div>
@@ -57,7 +59,7 @@
   </section>
 
   <!-- ================= ABOUT ================= -->
-  <section class="about section">
+  <section class="about section" data-aos="fade-up">
     <div class="container">
       <h3>About Zose Global Investment LTD</h3>
       <p>
@@ -71,21 +73,21 @@
   <!-- ================= SERVICES ================= -->
   <section class="services section bg-light">
     <div class="container">
-      <h3>Our Services</h3>
+      <h3 data-aos="fade-up">Our Services</h3>
 
       <div class="service-grid">
 
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h4>Telemedicine Services</h4>
           <p>Virtual consultations, secure medical records, and fast prescriptions.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
           <h4>Medical Equipment Sales</h4>
           <p>Quality diagnostic tools, patient monitors, ICU beds and more.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
           <h4>Healthcare Management</h4>
           <p>Hospital setup, consultancy, equipment installation and maintenance.</p>
         </div>
@@ -95,7 +97,7 @@
   </section>
 
   <!-- ================= TELEMEDICINE APP ================= -->
-  <section class="app section">
+  <section class="app section" data-aos="fade-right">
     <div class="container app-content">
       <div>
         <h3>Healthcare in Your Pocket</h3>
@@ -109,7 +111,7 @@
   </section>
 
   <!-- ================= WHY CHOOSE US ================= -->
-  <section class="why section bg-light">
+  <section class="why section bg-light" data-aos="fade-left">
     <div class="container">
       <h3>Why Choose Us</h3>
       <ul class="why-list">
@@ -123,7 +125,7 @@
   </section>
 
   <!-- ================= CONTACT CTA ================= -->
-  <section class="cta">
+  <section class="cta" data-aos="zoom-in">
     <div class="container">
       <h3>Ready to Experience Better Healthcare?</h3>
       <a href="#" class="btn-primary">Get Started Today</a>
@@ -143,6 +145,14 @@
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+  });
+</script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100,
   });
 </script>
 </body>
