@@ -173,3 +173,84 @@ body {
     flex-direction: column;
   }
 }
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--primary);
+  transition: 0.3s;
+}
+
+/* Animate Hamburger */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Nav */
+#nav-menu {
+  transition: 0.3s ease;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+.desktop-btn {
+  display: inline-block;
+}
+
+/* ================= RESPONSIVE NAV ================= */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+
+  #nav-menu {
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+
+  #nav-menu.active {
+    left: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .mobile-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+  }
+}
