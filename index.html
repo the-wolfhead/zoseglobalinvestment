@@ -136,6 +136,14 @@
       <p>© 2026 Zose Global Investment LTD. All rights reserved.</p>
     </div>
   </footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
 
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
