@@ -1,37 +1,150 @@
-.section-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: var(--primary);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zose Global Investment LTD | Diversified Investment Company</title>
 
-.section-text {
-  max-width: 900px;
-  line-height: 1.8;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-.division-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container nav">
+    <h1 class="logo">ZOSE GLOBAL</h1>
 
-.division-card {
-  background: var(--white);
-  padding: 30px;
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
-  transition: 0.3s ease;
-}
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-.division-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
-}
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Divisions</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-.division-card h4 {
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 15px;
-  color: var(--primary);
-}
+    <a href="#" class="btn-primary desktop-btn">Contact Us</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-content">
+    <h2>Driving Growth Across Multiple Industries in Nigeria</h2>
+    <p>
+      Zose Global Investment LTD is a diversified Nigerian enterprise engaged in
+      healthcare, manufacturing, retail operations, agriculture, food distribution,
+      real estate and strategic consultancy services.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">Explore Our Divisions</a>
+      <a href="#" class="btn-secondary">Corporate Profile</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT SNAPSHOT ================= -->
+<section class="section">
+  <div class="container">
+    <h3 class="section-title">About Zose Global Investment LTD</h3>
+    <p class="section-text">
+      Incorporated in Nigeria, Zose Global Investment LTD operates as a diversified
+      investment and operations company with interests spanning healthcare services,
+      manufacturing and production, retail trade, food and agricultural distribution,
+      real estate development, and consultancy services. The Company is committed to
+      contributing meaningfully to national economic growth through structured and
+      sustainable business operations.
+    </p>
+  </div>
+</section>
+
+<!-- ================= OUR DIVISIONS ================= -->
+<section class="section bg-light">
+  <div class="container">
+    <h3 class="section-title">Our Business Divisions</h3>
+
+    <div class="division-grid">
+
+      <div class="division-card">
+        <h4>Healthcare & Telemedicine</h4>
+        <p>Provision of medical equipment, telemedicine platforms, and healthcare management solutions.</p>
+      </div>
+
+      <div class="division-card">
+        <h4>Manufacturing & Production</h4>
+        <p>Manufacture and production of industrial, commercial, and consumer goods.</p>
+      </div>
+
+      <div class="division-card">
+        <h4>Retail & Supermarkets</h4>
+        <p>Operation of supermarkets, chain stores, and retail distribution outlets.</p>
+      </div>
+
+      <div class="division-card">
+        <h4>Food & Agricultural Distribution</h4>
+        <p>Distribution of foodstuffs, agricultural products, bakery goods and fast-moving consumer products.</p>
+      </div>
+
+      <div class="division-card">
+        <h4>Real Estate</h4>
+        <p>Property acquisition, sales, and real estate agency services.</p>
+      </div>
+
+      <div class="division-card">
+        <h4>Agriculture & Consultancy</h4>
+        <p>Farming consultancy, mechanized agriculture training, livestock and crop production advisory services.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= INFRASTRUCTURE ================= -->
+<section class="section">
+  <div class="container">
+    <h3 class="section-title">Infrastructure & Capabilities</h3>
+    <p class="section-text">
+      The Company develops and operates mobile applications, software platforms,
+      retail establishments, manufacturing facilities, distribution networks,
+      and consultancy frameworks designed to support multi-sector operations
+      across Nigeria.
+    </p>
+  </div>
+</section>
+
+<!-- ================= CORPORATE CTA ================= -->
+<section class="cta">
+  <div class="container">
+    <h3>Partner With a Diversified Nigerian Enterprise</h3>
+    <a href="#" class="btn-primary">Make an Enquiry</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Zose Global Investment LTD. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
