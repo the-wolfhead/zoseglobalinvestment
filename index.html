@@ -1,167 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zose Global Investment LTD | Healthcare & Telemedicine</title>
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <!-- AOS Animation Library -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+.section-text {
+  max-width: 900px;
+  line-height: 1.8;
+}
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+.division-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
 
-  <!-- ================= HEADER ================= -->
-  <!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="container nav">
-    <h1 class="logo">Zose Global</h1>
+.division-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s ease;
+}
 
-    <!-- Hamburger -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+.division-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+}
 
-    <nav id="nav-menu">
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Telemedicine</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#" class="mobile-btn">Book Consultation</a></li>
-      </ul>
-    </nav>
-
-    <a href="#" class="btn-primary desktop-btn">Book Consultation</a>
-  </div>
-</header>
-
-  <!-- ================= HERO ================= -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h2 data-aos="fade-up">Accessible Healthcare Across Nigeria</h2>
-      <p data-aos="fade-up" data-aos-delay="200">
-        Consult certified doctors online, access quality medical equipment,
-        and experience healthcare innovation built for Nigerians.
-      </p>
-      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-        <a href="#" class="btn-primary">Book Online Consultation</a>
-        <a href="#" class="btn-secondary">Download App</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ABOUT ================= -->
-  <section class="about section" data-aos="fade-up">
-    <div class="container">
-      <h3>About Zose Global Investment LTD</h3>
-      <p>
-        Zose Global Investment LTD is a Nigerian healthcare solutions provider
-        specializing in medical equipment sales, telemedicine services, and
-        healthcare management solutions designed to improve access and quality of care nationwide.
-      </p>
-    </div>
-  </section>
-
-  <!-- ================= SERVICES ================= -->
-  <section class="services section bg-light">
-    <div class="container">
-      <h3 data-aos="fade-up">Our Services</h3>
-
-      <div class="service-grid">
-
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <h4>Telemedicine Services</h4>
-          <p>Virtual consultations, secure medical records, and fast prescriptions.</p>
-        </div>
-
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
-          <h4>Medical Equipment Sales</h4>
-          <p>Quality diagnostic tools, patient monitors, ICU beds and more.</p>
-        </div>
-
-        <div class="card" data-aos="fade-up" data-aos-delay="300">
-          <h4>Healthcare Management</h4>
-          <p>Hospital setup, consultancy, equipment installation and maintenance.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= TELEMEDICINE APP ================= -->
-  <section class="app section" data-aos="fade-right">
-    <div class="container app-content">
-      <div>
-        <h3>Healthcare in Your Pocket</h3>
-        <p>
-          Get 24/7 access to licensed doctors through our secure telemedicine app.
-          Affordable, reliable, and built for Nigerians.
-        </p>
-        <a href="#" class="btn-primary">Download Now</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= WHY CHOOSE US ================= -->
-  <section class="why section bg-light" data-aos="fade-left">
-    <div class="container">
-      <h3>Why Choose Us</h3>
-      <ul class="why-list">
-        <li>🇳🇬 Built for Nigerians</li>
-        <li>Licensed medical professionals</li>
-        <li>Affordable consultations</li>
-        <li>Secure & confidential</li>
-        <li>Fast response time</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ================= CONTACT CTA ================= -->
-  <section class="cta" data-aos="zoom-in">
-    <div class="container">
-      <h3>Ready to Experience Better Healthcare?</h3>
-      <a href="#" class="btn-primary">Get Started Today</a>
-    </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Zose Global Investment LTD. All rights reserved.</p>
-    </div>
-  </footer>
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('nav-menu');
-
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-  });
-</script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true,
-    offset: 100,
-  });
-</script>
-<script>
-  window.addEventListener("scroll", function() {
-    const hero = document.querySelector(".hero");
-    let scrollPosition = window.pageYOffset;
-    hero.style.backgroundPositionY = scrollPosition * 0.5 + "px";
-  });
-</script>
-
-</body>
-</html>
+.division-card h4 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
