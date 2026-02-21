@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Zose Global Investment LTD</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav-container">
+    <a href="index.html" class="logo">ZOSE GLOBAL</a>
+
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="divisions.html">Our Divisions</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="contact-hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1 data-aos="fade-down">Contact Zose Global</h1>
+    <p data-aos="fade-up">Partner With Nigeria’s Emerging Healthcare Infrastructure Leader</p>
+  </div>
+</section>
+
+<!-- Contact Info Section -->
+<section class="contact-info container">
+
+  <div class="info-card" data-aos="fade-up">
+    <h3>Head Office</h3>
+    <p>Lagos, Nigeria</p>
+  </div>
+
+  <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+    <h3>Email</h3>
+    <p>info@zoseglobal.com</p>
+  </div>
+
+  <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+    <h3>Phone</h3>
+    <p>+234 800 000 0000</p>
+  </div>
+
+</section>
+
+<!-- Contact Form -->
+<section class="contact-form-section">
+  <div class="container form-container" data-aos="fade-up">
+
+    <h2>Send Us An Enquiry</h2>
+
+    <form>
+
+      <div class="form-row">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="form-row">
+        <input type="text" placeholder="Company Name">
+        <input type="tel" placeholder="Phone Number">
+      </div>
+
+      <select required>
+        <option value="">Select Enquiry Type</option>
+        <option>Medical Equipment Sales</option>
+        <option>Telemedicine Partnership</option>
+        <option>Healthcare Management</option>
+        <option>General Contracting</option>
+      </select>
+
+      <textarea placeholder="Your Message" rows="6" required></textarea>
+
+      <button type="submit" class="btn-primary">Submit Enquiry</button>
+
+    </form>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section" data-aos="fade-up">
+  <iframe
+    src="https://www.google.com/maps?q=Lagos,Nigeria&output=embed"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>ZOSE GLOBAL</h3>
+      <p>Healthcare. Infrastructure. Innovation.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="divisions.html">Divisions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Location</h4>
+      <p>Lagos, Nigeria</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Zose Global Investment LTD. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
