@@ -215,7 +215,7 @@ body {
   display: inline-block;
 }
 
-/* ================= RESPONSIVE NAV ================= */
+/* ================= RESPONSIVE NAV DROPDOWN ================= */
 @media (max-width: 768px) {
 
   .hamburger {
@@ -229,14 +229,23 @@ body {
   #nav-menu {
     position: absolute;
     top: 80px;
-    left: -100%;
+    left: 0;
     width: 100%;
     background: var(--white);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    /* Animation Setup */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
   }
 
   #nav-menu.active {
-    left: 0;
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .nav-links {
@@ -249,7 +258,7 @@ body {
     display: inline-block;
     background: var(--accent);
     color: var(--white);
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 6px;
     text-align: center;
   }
