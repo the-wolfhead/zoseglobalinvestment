@@ -155,5 +155,13 @@
     offset: 100,
   });
 </script>
+<script>
+  window.addEventListener("scroll", function() {
+    const hero = document.querySelector(".hero");
+    let scrollPosition = window.pageYOffset;
+    hero.style.backgroundPositionY = scrollPosition * 0.5 + "px";
+  });
+</script>
+
 </body>
 </html>
