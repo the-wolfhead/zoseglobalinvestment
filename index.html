@@ -137,13 +137,18 @@
 </footer>
 
 <script>
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('nav-menu');
+  function toggleMenu() {
+  const nav = document.getElementById("nav-menu");
+  const burger = document.querySelector(".hamburger");
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-  });
+  nav.classList.toggle("active");
+
+  if (nav.classList.contains("active")) {
+    burger.innerHTML = "✕";
+  } else {
+    burger.innerHTML = "☰";
+  }
+}
 </script>
 
 </body>
