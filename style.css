@@ -56,9 +56,8 @@ body {
 
 .nav-links {
   display: flex;
-  flex-direction: column;
-  padding: 30px;
-  gap: 20px;
+  list-style: none;
+  gap: 30px;
 }
 
 .nav-links a {
