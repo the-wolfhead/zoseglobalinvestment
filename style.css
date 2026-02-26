@@ -168,9 +168,7 @@ body {
 
 /* ================= RESPONSIVE ================= */
 @media(max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
+  
 
   .hero h2 {
     font-size: 30px;
