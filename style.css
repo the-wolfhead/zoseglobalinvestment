@@ -500,3 +500,21 @@ textarea {
     flex-direction: column;
   }
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--dark);
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo span {
+  letter-spacing: 1px;
+}
